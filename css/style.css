@@ -1,0 +1,257 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.center {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear {
+	clear: both;
+}
+
+header {
+	background: #e53935;
+	padding: 10px 0;
+}
+
+header > .center {
+	display: flex;
+}
+
+.logo {
+	color: white;
+	font-size: 21px;
+	width: 50%;
+}
+
+.menu {
+	text-align: right;
+	width: 50%;
+}
+
+.menu ul {
+	list-style-type: none;
+}
+
+.menu li {
+	margin-right: 10px;
+	font-size: 15px;
+	display: inline-block;
+}
+
+.menu a {
+	color: white;
+}
+
+section.text-call {
+	background: #c62828;
+	padding: 30px 0;
+	text-align: center;
+	color: white;
+}
+
+section.text-call i {
+	font-size: 40px;
+}
+
+section.text-call h2,
+section.text-call h3 {
+	font-weight: normal;
+}
+
+section.text-call h2 > b {
+	color: #ffea00;
+}
+
+section.shop {
+	padding: 30px 0 70px 0;
+}
+
+section.shop > .center {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.shop-wraper {
+	width: 33.3%;
+	padding: 20px;
+}
+
+.box-single-shop {
+	height: 100%;
+	border: 1px solid rgb(225,225,225);
+}
+
+.box-single-shop img {
+	max-width: 100%;
+}
+
+img {
+	filter: invert(100%);
+}
+
+.box-single-shop h2 {
+	text-align: center;
+	padding:0 8px;
+	font-weight: normal;
+}
+
+.box-single-shop p {
+	padding:15px 8px;
+	font-size: 15px;
+	color: rgb(10,10,10);
+}
+
+.shop-wraper a {
+	color: black;
+	background: #ffea00;
+	padding: 10px 8px;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+section.news {
+	padding: 30px 0;
+	background-image: url('https://images.wallpapersden.com/image/download/pyramid-minimal-landscape_bGtlZmWUmZqaraWkpJRnamtlrWZlbWU.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.w50 {
+	float: left;
+	width: 50%;
+	padding: 0 15px;
+}
+
+.w50 h1 {
+	margin-bottom: 15px;
+	font-size: 26px;
+	font-weight: normal;
+	color: white;
+}
+
+.text-right span {
+	position: relative;
+	right: 10px;
+}
+
+.box-single-notice {
+	padding: 20px 0;
+	border-bottom: 1px dotted #ccc;
+}
+
+.box-single-notice h2 {
+	font-size: 21px;
+	font-weight: bold;
+	color: white;
+}
+
+.box-single-notice p {
+	font-size: 16px;
+	font-weight: normal;
+	color: white;
+}
+
+.statements ul {
+	list-style-position: inside;
+}
+
+.statements li {
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: white;
+}
+
+.footer-one {
+	padding: 30px 0;
+	background: #c62828;
+	color: white;
+}
+
+.footer-two {
+	text-align: center;
+	background-color: #e53935;
+	color: white;
+	padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+
+	header > .center {
+		flex-wrap: wrap;
+	}
+
+	.logo {
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+	}
+	
+	.menu {
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+	}
+
+	.menu a {
+		color: white;
+		margin: 0 10px;
+	}
+
+	.shop-wraper {
+		width: 100%;
+		max-width: 500px;
+		padding: 20px;
+		margin:30px auto;
+	}
+
+	.w50 {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.text-right {
+		text-align: center;
+	}
+
+	.text-right span {
+		position: relative;
+		right: 0;
+	}
+
+	.footer-one {
+		text-align: center;
+		width: 100%;
+		padding: 2px 0;
+	}
+
+	.footer-one .w50 {
+		font-size: 15px;
+	}
+
+	.footer-one .w50:not(:nth-of-type(2)) {
+		margin-top: 25px;
+	}
+
+	.footer-two {
+		text-align: center;
+		width: 100%;
+	}
+
+}
